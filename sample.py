@@ -1,7 +1,8 @@
 import falcon
 import json
- 
-class QuoteResource:
+
+
+class QuoteResource(object):
     def on_get(self, req, resp):
         """Handles GET requests"""
         quote = {
